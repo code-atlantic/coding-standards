@@ -1,28 +1,22 @@
-/**
- * External dependencies
- */
-const merge = require( 'merge' );
-
-module.exports = {
-	parser: 'babel-eslint',
+const eslintConfig = {
+	extends: [
+		"eslint:recommended",
+		"plugin:@wordpress/eslint-plugin/recommended-with-formatting",
+		"plugin:@wordpress/eslint-plugin/jsdoc",
+		"plugin:eslint-comments/recommended",
+	],
+	plugins: ["standard", "import", "promise"],
 	env: {
 		browser: true,
 		es6: true,
 		jest: true,
 		node: true,
 	},
-	parserOptions: {
-		ecmaVersion: 2018,
-		sourceType: 'module',
+	settings: {
+		jsdoc: {
+			mode: "typescript",
+		},
 	},
-	plugins: [ 'import' ],
-	rules: merge(
-		require( './rules/best-practices' ),
-		require( './rules/esnext' ),
-		require( './rules/import' ),
-		require( './rules/possible-errors' ),
-		require( './rules/strict' ),
-		require( './rules/stylistic-issues' ),
-		require( './rules/variables' ),
-	),
 };
+
+module.exports = eslintConfig;
