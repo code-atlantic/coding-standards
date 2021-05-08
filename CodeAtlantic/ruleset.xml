@@ -2,9 +2,13 @@
 <ruleset name="CodeAtlantic">
 	<description>Code Atlantic Coding Standards</description>
 
+	<!-- How to scan -->
+	<!-- Usage instructions: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage -->
+	<!-- Annotated ruleset: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
 	<!-- Arguments: colors, show progress and show sniff name. -->
 	<arg name="colors" />
 	<arg value="ps" />
+	<arg name="parallel" value="8"/><!-- Enables parallel processing when available for faster results. -->
 
 	<!-- Exclude files -->
 	<exclude-pattern>wp/</exclude-pattern>
@@ -18,6 +22,8 @@
 		<exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments" />
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
 		<exclude name="WordPress.PHP.DisallowShortTernary.Found" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
 	</rule>
 
 	<rule ref="WordPress.NamingConventions.ValidHookName">
@@ -32,9 +38,21 @@
 		</properties>
 	</rule>
 
+		<rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
+		<properties>
+			<property name="blank_line_check" value="true"/>
+		</properties>
+	</rule>
+
+	<!-- https://github.com/PHPCompatibility/PHPCompatibilityWP -->
 	<rule ref="PHPCompatibilityWP" />
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax.Found" />
 	<rule ref="NeutronStandard.StrictTypes.RequireStrictTypes.StrictTypes" />
 	<rule ref="NeutronStandard.Functions.TypeHint.NoReturnType" />
 	<rule ref="NeutronStandard.Functions.TypeHint.NoArgumentType" />
+
+		<!-- Enforce space before closing parenthesis -->
+	<!-- <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBeforeClose">
+		<severity>5</severity>
+	</rule> -->
 </ruleset>
