@@ -2,6 +2,7 @@
 	"name": "code-atlantic/coding-standards",
 	"description": "Code Atlantic Coding Standards",
 	"type": "phpcodesniffer-standard",
+	"version": "0.0.2",
 	"require": {
 		"wp-coding-standards/wpcs": "^2.3",
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
