@@ -1,0 +1,21 @@
+{
+	"name": "@code-atlantic/browserslist-config",
+	"publishConfig": {
+		"access": "public"
+	},
+	"version": "1.0.1",
+	"description": "Code Atlantic's Browserlist config, following our styleguide",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/code-atlantic/coding-standards"
+	},
+	"bugs": {
+		"url": "https://github.com/code-atlantic/coding-standards/issues"
+	},
+	"homepage": "https://github.com/code-atlantic/coding-standards",
+	"engines": {
+		"node": ">=10"
+	},
+	"main": "index.js"
+}
