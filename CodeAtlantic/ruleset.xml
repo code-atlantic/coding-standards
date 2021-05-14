@@ -47,9 +47,9 @@
 	<!-- https://github.com/PHPCompatibility/PHPCompatibilityWP -->
 	<rule ref="PHPCompatibilityWP" />
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax.Found" />
-	<rule ref="NeutronStandard.StrictTypes.RequireStrictTypes.StrictTypes" />
+	<!-- <rule ref="NeutronStandard.StrictTypes.RequireStrictTypes.StrictTypes" />
 	<rule ref="NeutronStandard.Functions.TypeHint.NoReturnType" />
-	<rule ref="NeutronStandard.Functions.TypeHint.NoArgumentType" />
+	<rule ref="NeutronStandard.Functions.TypeHint.NoArgumentType" /> -->
 
 		<!-- Enforce space before closing parenthesis -->
 	<!-- <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBeforeClose">
