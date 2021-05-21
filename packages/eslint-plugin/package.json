@@ -1,11 +1,14 @@
 {
 	"name": "@code-atlantic/eslint-plugin",
-	"publishConfig": {
-		"access": "public"
-	},
-	"version": "0.0.12",
-	"description": "Code Atlantic's ESLint plugin, following our styleguide",
-	"license": "MIT",
+	"version": "0.0.14",
+	"description": "Code Atlantic's ESLint plugin, following our style guide.",
+	"keywords": [
+		"wordpress",
+		"gutenberg",
+		"eslint",
+		"plugin"
+	],
+	"license": "GPL-2.0-or-later",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/code-atlantic/coding-standards"
@@ -15,28 +18,33 @@
 	},
 	"homepage": "https://github.com/code-atlantic/coding-standards",
 	"engines": {
-		"node": ">=10"
+		"node": ">=12",
+		"npm": ">=6.9"
 	},
 	"scripts": {
 		"find-rules": "eslint-find-rules lib/configs/all.js -u -n -d",
 		"lint": "eslint ."
 	},
-	"peerDependencies": {
-		"eslint": "^7.26.0"
-	},
+	"main": "index.js",
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "~4.24.0",
-		"@typescript-eslint/parser": "~4.24.0",
-		"confusing-browser-globals": "1.0.9",
-		"eslint": "^7.26.0",
-		"eslint-find-rules": "3.5.0",
+		"@wordpress/eslint-plugin": "~9.0.5",
+		"@wordpress/prettier-config": "~1.0.4",
+		"confusing-browser-globals": "~1.0.9",
+		"eslint-find-rules": "~3.5.0",
 		"eslint-plugin-eslint-comments": "~3.2.0",
-		"eslint-plugin-import": "^2.22.1",
-		"eslint-plugin-jsx-a11y": "6.3.1",
-		"eslint-plugin-promise": "^4.2.1",
-		"eslint-plugin-react": "7.20.0",
-		"eslint-plugin-react-hooks": "4.0.4",
-		"eslint-plugin-standard": "^4.0.1",
-		"typescript": "~4.2.4"
+		"eslint-plugin-promise": "~4.2.1",
+		"eslint-plugin-standard": "~4.0.1"
+	},
+	"peerDependencies": {
+		"eslint": "^6 || ^7",
+		"typescript": "^4"
+	},
+	"peerDependenciesMeta": {
+		"typescript": {
+			"optional": true
+		}
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
