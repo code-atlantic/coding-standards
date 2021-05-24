@@ -1,6 +1,6 @@
 {
 	"name": "@code-atlantic/eslint-plugin",
-	"version": "0.0.14",
+	"version": "0.0.15",
 	"description": "Code Atlantic's ESLint plugin, following our style guide.",
 	"keywords": [
 		"wordpress",
