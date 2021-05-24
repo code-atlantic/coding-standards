@@ -10,6 +10,7 @@ module.exports = {
 	plugins: [ 'standard', 'import', 'promise' ],
 	rules: {
 		'no-restricted-globals': [ 'error' ].concat( restrictedGlobals ),
+		'jsdoc/no-undefined-types': 0,
 	},
 	env: {
 		browser: true,
@@ -20,6 +21,11 @@ module.exports = {
 	settings: {
 		jsdoc: {
 			mode: 'typescript',
+		},
+		'import/resolver': {
+			node: {
+				extensions: [ '.js', '.jsx', '.ts', '.tsx', '.d.ts' ],
+			},
 		},
 	},
 };
