@@ -1,6 +1,6 @@
 {
 	"name": "@code-atlantic/eslint-plugin",
-	"version": "0.0.15",
+	"version": "0.0.16",
 	"description": "Code Atlantic's ESLint plugin, following our style guide.",
 	"keywords": [
 		"wordpress",
@@ -22,7 +22,6 @@
 		"npm": ">=6.9"
 	},
 	"scripts": {
-		"find-rules": "eslint-find-rules lib/configs/all.js -u -n -d",
 		"lint": "eslint ."
 	},
 	"main": "index.js",
@@ -30,7 +29,6 @@
 		"@wordpress/eslint-plugin": "^9.0.6",
 		"@wordpress/prettier-config": "^1.0.5",
 		"confusing-browser-globals": "^1.0.10",
-		"eslint-find-rules": "^3.6.1",
 		"eslint-plugin-eslint-comments": "^3.2.0",
 		"eslint-plugin-promise": "^5.1.0",
 		"eslint-plugin-standard": "^5.0.0"
