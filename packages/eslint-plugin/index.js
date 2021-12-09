@@ -1,5 +1,6 @@
 module.exports = {
 	configs: {
-		base: require( './lib/configs/base' ),
+		base: require( '@code-atlantic/eslint-plugin/lib/configs/recommended' ),
+		recommended: require( '@code-atlantic/eslint-plugin/lib/configs/recommended' ),
 	},
 };
