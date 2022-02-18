@@ -1,6 +1,6 @@
 {
 	"name": "@code-atlantic/eslint-plugin",
-	"version": "0.0.17",
+	"version": "0.1.0",
 	"description": "Code Atlantic's ESLint plugin, following our style guide.",
 	"keywords": [
 		"wordpress",
@@ -18,19 +18,19 @@
 	},
 	"homepage": "https://github.com/code-atlantic/coding-standards",
 	"engines": {
-		"node": ">=12",
-		"npm": ">=6.9"
+		"node": "^16.4.2",
+		"npm": "^7.18.1"
 	},
 	"scripts": {
 		"lint": "eslint ."
 	},
 	"main": "index.js",
 	"dependencies": {
-		"@wordpress/eslint-plugin": "^9.3.0",
-		"@wordpress/prettier-config": "^1.1.1",
-		"confusing-browser-globals": "^1.0.10",
+		"@wordpress/eslint-plugin": "^10.0.1",
+		"@wordpress/prettier-config": "^1.1.2",
+		"confusing-browser-globals": "^1.0.11",
 		"eslint-plugin-eslint-comments": "^3.2.0",
-		"eslint-plugin-promise": "^5.2.0",
+		"eslint-plugin-promise": "^6.0.0",
 		"eslint-plugin-standard": "^5.0.0"
 	},
 	"peerDependencies": {
