@@ -18,13 +18,13 @@ npm install @code-atlantic/eslint-plugin --save-dev
 
 ## Usage
 
-This plugin exports a [`base` config](index.js) that enforces best practices.
+This plugin exports a [`recommended` config](index.js) that enforces best practices.
 
 Create your own `.eslintrc.js` configuration file:
 
 ```js
 {
-	"extends": "plugin:@code-atlantic/base",
+	"extends": "plugin:@code-atlantic/recommended",
 	"plugins": [
 		"@code-atlantic"
 	]
@@ -38,8 +38,8 @@ You can also stack any of the extra shared configs on top of the "base" config b
 ```js
 {
 	"extends": [
-		"plugin:@code-atlantic/base",
-		"plugin:@code-atlantic/react"
+		"plugin:@code-atlantic/recommended",
+		"plugin:@wordpress/react"
 	]
 }
 ```
@@ -48,5 +48,4 @@ You can also stack any of the extra shared configs on top of the "base" config b
 
 The following rulesets are available:
 
-*   **base**: Enforces best practices and possible errors
-*   **react**: Enforces best React.js practices
+*   **recommended**: Enforces best practices and possible errors
