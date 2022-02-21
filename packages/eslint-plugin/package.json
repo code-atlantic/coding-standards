@@ -18,8 +18,8 @@
 	},
 	"homepage": "https://github.com/code-atlantic/coding-standards",
 	"engines": {
-		"node": "^16.4.2",
-		"npm": "^7.18.1"
+		"node": ">=12.13",
+		"npm": ">=6.9"
 	},
 	"scripts": {
 		"lint": "eslint ."
