@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.2
+
+- Match engine versions to dependencies.
+
 ## v0.1.1
 
 - Fix broken config path.
