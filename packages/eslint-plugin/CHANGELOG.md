@@ -1,13 +1,13 @@
 # Changelog
 
+## v1.0.1
+
+* Match engine versions to dependencies.
+
 ## v1.0.0
 
 * Change to use recommended-with-formatting.
 * Update dependencies.
-
-## v0.1.2
-
-* Match engine versions to dependencies.
 
 ## v0.1.1
 
