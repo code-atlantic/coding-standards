@@ -2,15 +2,19 @@
 	"name": "code-atlantic/coding-standards",
 	"description": "Code Atlantic Coding Standards",
 	"type": "phpcodesniffer-standard",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"require": {
-		"wp-coding-standards/wpcs": "^2.3",
+		"wp-coding-standards/wpcs": "dev-master",
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-		"automattic/phpcs-neutron-standard": "^1.6"
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0"
 	},
 	"license": "MIT",
 	"archive": {
 		"exclude": [ "/packages" ]
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
 	}
 }
