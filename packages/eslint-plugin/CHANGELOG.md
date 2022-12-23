@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.0
+
+* Update dependencies.
+* Remove `eslint-plugin-standard` as its no longer needed.
+
 ## v1.0.1
 
 * Match engine versions to dependencies.
