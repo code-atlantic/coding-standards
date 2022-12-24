@@ -3,7 +3,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "Code Atlantic's Stylelint config, following our styleguide",
 	"license": "MIT",
 	"repository": {
@@ -22,11 +22,11 @@
 		"stylelint-order": "^5.0.0"
 	},
 	"devDependencies": {
-		"stylelint": "^14.5.1",
+		"stylelint": "^14.16.0",
 		"stylelint-find-rules": "^2.2.0"
 	},
 	"peerDependencies": {
-		"stylelint": "^14.5.1"
+		"stylelint": "^14.16.0"
 	},
 	"scripts": {
 		"find-rules": "stylelint-find-rules --config index.js"
