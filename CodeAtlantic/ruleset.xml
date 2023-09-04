@@ -15,45 +15,44 @@
 	<exclude-pattern>vendor/</exclude-pattern>
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 
+	<!-- https://github.com/PHPCompatibility/PHPCompatibilityWP -->
+	<rule ref="PHPCompatibilityWP" />
+
 	<!-- Rules -->
 	<rule ref="WordPress">
 		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments" />
-		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
-		<exclude name="WordPress.PHP.DisallowShortTernary.Found" />
+		<!-- Allow short ternary assignment. -->
+		<exclude name="Universal.Operators.DisallowShortTernary" />
+		<!-- Enforce short array syntax. https://github.com/WordPress/WordPress-Coding-Standards/issues/1607#issuecomment-1605730869 -->
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
+
 		<!-- Allow PSR file name & class names. -->
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+		
 	</rule>
+
+	<!-- Enforce short arrays. https://github.com/WordPress/WordPress-Coding-Standards/issues/1607#issuecomment-1605730869 -->
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 
 	<rule ref="WordPress.NamingConventions.ValidHookName">
 		<properties>
+			<!-- Allow hooknames to use / for namespacing. -->
 			<property name="additionalWordDelimiters" value="/" />
 		</properties>
 	</rule>
 
-	<rule ref="WordPress.WP.AlternativeFunctions">
-		<properties>
-			<property name="exclude" value="file_get_contents" />
-		</properties>
-	</rule>
-
-		<rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
+	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
 		<properties>
 			<property name="blank_line_check" value="true"/>
 		</properties>
 	</rule>
 
-	<!-- https://github.com/PHPCompatibility/PHPCompatibilityWP -->
-	<rule ref="PHPCompatibilityWP" />
-	<rule ref="Generic.Arrays.DisallowLongArraySyntax.Found" />
-	<!-- <rule ref="NeutronStandard.StrictTypes.RequireStrictTypes.StrictTypes" />
-	<rule ref="NeutronStandard.Functions.TypeHint.NoReturnType" />
-	<rule ref="NeutronStandard.Functions.TypeHint.NoArgumentType" /> -->
-
-		<!-- Enforce space before closing parenthesis -->
-	<!-- <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBeforeClose">
-		<severity>5</severity>
-	</rule> -->
+	<rule ref="WordPress.WP.AlternativeFunctions">
+		<!-- <properties>
+			<property name="exclude" value="file_get_contents" />
+		</properties> -->
+	</rule>
 </ruleset>
