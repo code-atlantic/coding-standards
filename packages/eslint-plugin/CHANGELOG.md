@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.2.0
+
+* Update dependencies.
+* Change to `recommended` with typescript support.
+
 ## v1.1.0
 
 * Update dependencies.
