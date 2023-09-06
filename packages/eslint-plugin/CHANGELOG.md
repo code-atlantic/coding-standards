@@ -2,6 +2,10 @@
 
 ## v1.2.0
 
+* Remove `standard` plugin.
+
+## v1.2.0
+
 * Update dependencies.
 * Change to `recommended` with typescript support.
 

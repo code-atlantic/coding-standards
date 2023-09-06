@@ -7,7 +7,7 @@ module.exports = {
 		'plugin:@wordpress/eslint-plugin/jsdoc',
 		'plugin:eslint-comments/recommended',
 	],
-	plugins: [ 'standard', 'import', 'promise' ],
+	plugins: [ 'import', 'promise' ],
 	rules: {
 		'no-restricted-globals': [ 'error' ].concat( restrictedGlobals ),
 		'jsdoc/no-undefined-types': 0,
