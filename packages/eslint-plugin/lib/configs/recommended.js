@@ -3,7 +3,7 @@ const restrictedGlobals = require( 'confusing-browser-globals' );
 module.exports = {
 	extends: [
 		'eslint:recommended',
-		'plugin:@wordpress/eslint-plugin/recommended-with-formatting',
+		'plugin:@wordpress/eslint-plugin/recommended',
 		'plugin:@wordpress/eslint-plugin/jsdoc',
 		'plugin:eslint-comments/recommended',
 	],
