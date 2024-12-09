@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.2.0
+
+* Update dependencies.
+  * "@wordpress/eslint-plugin": "^21.6.0"
+  * "@wordpress/prettier-config": "^4.13.0"
+  * "eslint-plugin-promise": "^7.2.1"
+
 ## v1.1.0
 
 * Update dependencies.
