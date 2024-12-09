@@ -1,11 +1,13 @@
 # Changelog
 
-## Unreleased
+## v1.3.0
 
 * Update dependencies.
-* Change to `recommended` with typescript support.
+  * "@wordpress/eslint-plugin": "^21.6.0"
+  * "@wordpress/prettier-config": "^4.13.0"
+  * "eslint-plugin-promise": "^7.2.1"
 
-## v1.2.0
+## v1.2.1
 
 * Remove `standard` plugin.
 
@@ -13,13 +15,6 @@
 
 * Update dependencies.
 * Change to `recommended` with typescript support.
-
-## v1.2.0
-
-* Update dependencies.
-  * "@wordpress/eslint-plugin": "^21.6.0"
-  * "@wordpress/prettier-config": "^4.13.0"
-  * "eslint-plugin-promise": "^7.2.1"
 
 ## v1.1.0
 

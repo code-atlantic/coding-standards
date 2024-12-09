@@ -1,4 +1,4 @@
-const restrictedGlobals = require( 'confusing-browser-globals' );
+const restrictedGlobals = require('confusing-browser-globals');
 
 module.exports = {
 	extends: [
@@ -7,9 +7,9 @@ module.exports = {
 		'plugin:@wordpress/eslint-plugin/jsdoc',
 		'plugin:eslint-comments/recommended',
 	],
-	plugins: [ 'import', 'promise' ],
+	plugins: ['import', 'promise'],
 	rules: {
-		'no-restricted-globals': [ 'error' ].concat( restrictedGlobals ),
+		'no-restricted-globals': ['error'].concat(restrictedGlobals),
 		'jsdoc/no-undefined-types': 0,
 	},
 	env: {
@@ -24,7 +24,7 @@ module.exports = {
 		},
 		'import/resolver': {
 			node: {
-				extensions: [ '.js', '.jsx', '.ts', '.tsx', '.d.ts' ],
+				extensions: ['.js', '.jsx', '.ts', '.tsx', '.d.ts'],
 			},
 		},
 	},
