@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.3.1
+
+* Add import plugin.
+
 ## v1.3.0
 
 * Update dependencies.
